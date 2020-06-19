@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectAppLoading } from "./store/appState/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
 import { Jumbotron } from "react-bootstrap";
+import AdoptionForm from "./pages/AdoptionForm";
 
 const Home = () => (
   <Jumbotron>
@@ -20,7 +21,7 @@ const Home = () => (
 );
 const Other = () => (
   <Jumbotron>
-    <h1>Other</h1>
+    <h1>Adoption Form</h1>
   </Jumbotron>
 );
 
@@ -39,7 +40,7 @@ function App() {
       {isLoading ? <Loading /> : null}
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/other" component={Other} />
+        <Route path="/other" component={AdoptionForm} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
       </Switch>
