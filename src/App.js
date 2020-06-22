@@ -13,15 +13,11 @@ import { selectAppLoading } from "./store/appState/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
 import { Jumbotron } from "react-bootstrap";
 import AdoptionForm from "./pages/AdoptionForm";
+import ListOfDogs from "./pages/ListOfDogs";
 
 const Home = () => (
   <Jumbotron>
     <h1>Home</h1>
-  </Jumbotron>
-);
-const Other = () => (
-  <Jumbotron>
-    <h1>Adoption Form</h1>
   </Jumbotron>
 );
 
@@ -40,7 +36,8 @@ function App() {
       {isLoading ? <Loading /> : null}
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/other" component={AdoptionForm} />
+        <Route path="/listofdogs" component={ListOfDogs} />
+        <Route path="/adoptionform" component={AdoptionForm} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
       </Switch>
