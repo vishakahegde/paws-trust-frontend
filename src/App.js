@@ -14,6 +14,7 @@ import { getUserWithStoredToken } from "./store/user/actions";
 import { Jumbotron } from "react-bootstrap";
 import AdoptionForm from "./pages/AdoptionForm";
 import ListOfDogs from "./pages/ListOfDogs";
+import ViewDogDetails from "./pages/ViewDogDetails";
 
 const Home = () => (
   <Jumbotron>
@@ -38,6 +39,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/listofdogs" component={ListOfDogs} />
         <Route path="/adoptionform" component={AdoptionForm} />
+        <Route path="/dogs/:id" component={ViewDogDetails} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
       </Switch>
