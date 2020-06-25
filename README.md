@@ -1,42 +1,18 @@
-# Frontend template
+## Paws Trust Adoption Centre
 
-This is a simple react/redux/jwt template to start a project quickly
+## What is this site about?
 
-## Table of contents:
+This site helps you adopt a dog and provide a permanent home. Adopt dont shop is the main motto paws trust adoption centre. You can find the site here -
 
-- **[Setup](#setup-how-to-use-this-template)**
-- **[Create React App docs](#cra-docs)**
+## Technology used in building this site
 
-## SETUP How to use this template
+- React
+- Redux
+- Express - REST API
+- Sequelize
+- React-Bootstrap
+- SendGrid (For success mail)
 
-1. Create a new project based on this template using the `Use this template` button
+## Wireframe
 
-![HOW_TO_USE](https://user-images.githubusercontent.com/20372832/77003323-70966180-695d-11ea-8abe-b362d57135f3.gif)
-
-2. Clone the app
-
-```
-git clone git@github.com:YOUR_GITHUB_NAME/YOUR_PROJECT_NAME.git
-```
-
-3. cd into your project
-
-```
-cd YOUR_PROJECT_NAME
-```
-
-4. install dependencies
-
-```
-npm install
-```
-
-5. Start development server with npm start
-
-```
-npm start
-```
-
-## CRA docs
-
-The normal Create React App docs can be found in [CRA_DOCS.md](./CRA_DOCS.md)
+https://wireframepro.mockflow.com/view/Ma0bb5471f22a178e7d81269269ab6ef21592222317795#/page/7f3c6f829ab44000b1bf05b06223e124
