@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import { Col, Button } from "react-bootstrap";
+import { Col, Button, Image } from "react-bootstrap";
+import { postAdoption } from "../../store/user/actions";
+import { useDispatch, useSelector } from "react-redux";
+import { selectDogDetails } from "../../store/viewDogDeatils/selectors";
 
 export default function AdoptionForm() {
+  const dispatch = useDispatch();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -13,22 +18,50 @@ export default function AdoptionForm() {
   const [postcode, setPostcode] = useState("");
   const [country, setCountry] = useState("");
 
+  const dog = useSelector(selectDogDetails);
+
   function submitForm(event) {
     event.preventDefault();
-    console.log(name, email, phone, address, city, province, postcode, country);
+    const dogId = dog.id;
+
+    dispatch(
+      postAdoption(
+        name,
+        email,
+        phone,
+        address,
+        city,
+        province,
+        postcode,
+        country,
+        dogId
+      )
+    );
+    setName("");
+    setEmail("");
+    setPhone("");
+    setAddress("");
+    setCity("");
+    setProvince("");
+    setPostcode("");
+    setCountry("");
   }
 
   return (
     <Container>
       <Form as={Col} md={{ span: 6, offset: 3 }} className="mt-5">
         <h1 className="mt-5 mb-5">Adoption Form</h1>
+        {dog.imageUrl ? (
+          <Image src={dog.imageUrl} alt="preview" thumbnail />
+        ) : null}
+        {/* <h6>We will never share below information with anyone.</h6> */}
         <Form.Group controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control
             value={name}
             onChange={(event) => setName(event.target.value)}
             type="text"
-            placeholder="Enter name"
+            placeholder="Enter full name"
             required
           />
         </Form.Group>
@@ -50,7 +83,7 @@ export default function AdoptionForm() {
           <Form.Control
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
-            type="number"
+            type="text"
             placeholder="Enter phone number"
             required
           />
