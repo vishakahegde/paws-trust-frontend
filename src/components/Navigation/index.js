@@ -28,13 +28,13 @@ export default function Navigation() {
             title="Adoption Information"
             id="collasible-nav-dropdown"
           >
-            <NavDropdown.Item href="/adoptioninformation/preadoptioninformation">
+            <NavDropdown.Item href="preadoptioninformation">
               Pre Adoption Information
             </NavDropdown.Item>
-            <NavDropdown.Item href="/adoptioninformation/dogadoptionchecklist">
+            <NavDropdown.Item href="dogadoptionchecklist">
               Dog Adoption Checklist
             </NavDropdown.Item>
-            <NavDropdown.Item href="/adoptioninformation/rulesbygovt">
+            <NavDropdown.Item href="rulesbygovt">
               Rules by government for Adoption
             </NavDropdown.Item>
           </NavDropdown>

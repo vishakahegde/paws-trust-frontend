@@ -34,15 +34,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/listofdogs" component={ListOfDogs} />
         <Route path="/adoptionform" component={AdoptionForm} />
-        <Route
-          path="/adoptioninformation/preadoptioninformation"
-          component={PreAdoptionInfo}
-        />
-        <Route
-          path="/adoptioninformation/dogadoptionchecklist"
-          component={DogAdoptionChecklist}
-        />
-        <Route path="/adoptioninformation/rulesbygovt" component={GovtRules} />
+        <Route path="/preadoptioninformation" component={PreAdoptionInfo} />
+        <Route path="/dogadoptionchecklist" component={DogAdoptionChecklist} />
+        <Route path="/rulesbygovt" component={GovtRules} />
         <Route path="/dogs/:id" component={ViewDogDetails} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
