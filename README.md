@@ -2,7 +2,7 @@
 
 ## What is this site about?
 
-This site helps you adopt a dog and provide a permanent home. Adopt dont shop is the main motto paws trust adoption centre. You can find the site here -
+This site helps you adopt a dog and provide a permanent home. Adopt dont shop is the main motto paws trust adoption centre. You can find the site here - https://pawstrust.netlify.app/
 
 ## Technology used in building this site
 
