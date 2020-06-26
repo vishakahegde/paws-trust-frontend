@@ -1,9 +1,18 @@
 import React from "react";
-import { Container, Row, Image, Col } from "react-bootstrap";
+import { Container, Row, Image, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div>
+      {" "}
+      <style type="text/css">
+        {`
+  .btn-flat {
+background-color: darkmagenta;
+color: white;
+} `}
+      </style>
       <Container>
         <h1>Paws Trust Adoption Centre</h1>
 
@@ -34,6 +43,21 @@ export default function Home() {
               providing a high quality of care and meeting each animals’ unique
               needs through training and enrichment programs.
             </p>
+
+            <Link to={`/preadoptioninformation`}>
+              <Button className="mb-2 mr-2" variant="flat">
+                Guide for Adoption
+              </Button>
+            </Link>
+            <Button
+              className="mb-2 mr-2"
+              variant="flat"
+              onClick={() =>
+                (window.location.href = "mailto:pawstrustadoption@gmail.com")
+              }
+            >
+              Contact Us
+            </Button>
           </Col>
         </Row>
 
