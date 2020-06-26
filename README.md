@@ -2,7 +2,15 @@
 
 ## What is this site about?
 
-This site helps you adopt a dog and provide a permanent home. Adopt dont shop is the main motto paws trust adoption centre. You can find the site here - https://pawstrust.netlify.app/
+This site helps you adopt a dog and provide a permanent home. Adopt dont shop is the main motto of paws trust adoption centre. You can find the site here - https://pawstrust.netlify.app/
+
+## Learning goals
+
+- Using React for routing.
+- Using reducers to transform the redux state.
+- Separating reducers, actions and selectors.
+- Sending GET & POST request using axios.
+- Setting authorization request using JWT.
 
 ## Technology used in building this site
 
@@ -12,6 +20,10 @@ This site helps you adopt a dog and provide a permanent home. Adopt dont shop is
 - Sequelize
 - React-Bootstrap
 - SendGrid (For success mail)
+
+## Project Board
+
+https://github.com/users/vishakahegde/projects/1
 
 ## Wireframe
 
