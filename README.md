@@ -1,42 +1,40 @@
-# Frontend template
+## Paws Trust Adoption Centre
 
-This is a simple react/redux/jwt template to start a project quickly
+## What is this site about?
 
-## Table of contents:
+This site helps you adopt a dog and provide a permanent home. Adopt dont shop is the main motto of paws trust adoption centre. You can find the site here - https://pawstrust.netlify.app/
 
-- **[Setup](#setup-how-to-use-this-template)**
-- **[Create React App docs](#cra-docs)**
+## App Demo
 
-## SETUP How to use this template
+<img width="1440" alt="Screenshot 2020-06-26 at 13 55 17" src="https://user-images.githubusercontent.com/63649711/85854444-b365a200-b7b4-11ea-88c8-df918c8f3be5.png">
 
-1. Create a new project based on this template using the `Use this template` button
+<img width="1440" alt="Screenshot 2020-06-26 at 13 57 38" src="https://user-images.githubusercontent.com/63649711/85854631-08091d00-b7b5-11ea-95c9-e78baac484a2.png">
 
-![HOW_TO_USE](https://user-images.githubusercontent.com/20372832/77003323-70966180-695d-11ea-8abe-b362d57135f3.gif)
+## Learning goals
 
-2. Clone the app
+- Using React for routing.
+- Using reducers to transform the redux state.
+- Separating reducers, actions and selectors.
+- Sending GET & POST request using axios.
+- Setting authorization request using JWT.
 
-```
-git clone git@github.com:YOUR_GITHUB_NAME/YOUR_PROJECT_NAME.git
-```
+## Technology used in building this site
 
-3. cd into your project
+- React
+- Redux
+- Express - REST API
+- Sequelize
+- React-Bootstrap
+- SendGrid (For success mail)
 
-```
-cd YOUR_PROJECT_NAME
-```
+## Project Board
 
-4. install dependencies
+https://github.com/users/vishakahegde/projects/1
 
-```
-npm install
-```
+## Wireframe
 
-5. Start development server with npm start
+https://wireframepro.mockflow.com/view/Ma0bb5471f22a178e7d81269269ab6ef21592222317795#/page/7f3c6f829ab44000b1bf05b06223e124
 
-```
-npm start
-```
+## Server
 
-## CRA docs
-
-The normal Create React App docs can be found in [CRA_DOCS.md](./CRA_DOCS.md)
+The server side of this project is an Express server connected to a PostgreSQL database - https://github.com/vishakahegde/paws-trust-backend

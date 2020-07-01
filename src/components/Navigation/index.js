@@ -7,6 +7,7 @@ import { selectToken } from "../../store/user/selectors";
 import NavbarItem from "./NavbarItem";
 import LoggedIn from "./LoggedIn";
 import LoggedOut from "./LoggedOut";
+import { NavDropdown } from "react-bootstrap";
 
 export default function Navigation() {
   const token = useSelector(selectToken);
@@ -14,15 +15,30 @@ export default function Navigation() {
   const loginLogoutControls = token ? <LoggedIn /> : <LoggedOut />;
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark">
       <Navbar.Brand as={NavLink} to="/">
-        YOUR PROJECT NAME
+        Paws Trust
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav style={{ width: "100%" }} fill>
           <NavbarItem path="/" linkText="Home" />
-          <NavbarItem path="/other" linkText="Other" />
+          <NavbarItem path="/listofdogs" linkText="List of Dogs" />
+          <NavDropdown
+            title="Adoption Information"
+            id="collasible-nav-dropdown"
+          >
+            <NavDropdown.Item href="preadoptioninformation">
+              Pre Adoption Information
+            </NavDropdown.Item>
+            <NavDropdown.Item href="dogadoptionchecklist">
+              Dog Adoption Checklist
+            </NavDropdown.Item>
+            <NavDropdown.Item href="rulesbygovt">
+              Rules by government for Adoption
+            </NavDropdown.Item>
+          </NavDropdown>
+
           {loginLogoutControls}
         </Nav>
       </Navbar.Collapse>
